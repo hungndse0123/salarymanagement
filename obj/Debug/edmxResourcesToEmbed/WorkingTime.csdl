@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SalaryManagement_SWD391_ProjectModel7" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="WorkingTime">
+    <Key>
+      <PropertyRef Name="WorkingTimeID" />
+    </Key>
+    <Property Name="WorkingTimeID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmployeeID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PeriodID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="WorkedTime" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="SalaryManagement_SWD391_ProjectEntities_WorkingTime" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="WorkingTimes" EntityType="Self.WorkingTime" />
+  </EntityContainer>
+</Schema>

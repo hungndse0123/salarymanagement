@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SalaryManagement_SWD391_ProjectModel5StoreContainer" CdmEntityContainer="SalaryManagement_SWD391_ProjectEntities_SalaryTicket">
+    <EntitySetMapping Name="SalaryTickets">
+      <EntityTypeMapping TypeName="SalaryManagement_SWD391_ProjectModel5.SalaryTicket">
+        <MappingFragment StoreEntitySet="SalaryTicket">
+          <ScalarProperty Name="SalaryTicketID" ColumnName="SalaryTicketID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="PeriodID" ColumnName="PeriodID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

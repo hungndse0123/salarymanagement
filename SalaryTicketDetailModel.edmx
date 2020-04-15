@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SalaryManagement_SWD391_ProjectModel6.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="SalaryTicketDetail">
+          <Key>
+            <PropertyRef Name="SalaryTicketID" />
+          </Key>
+          <Property Name="SalaryTicketID" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="WorkingTimeID" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="AllowanceID" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="TaxID" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="WageTier" Type="int" Nullable="false" />
+          <Property Name="BasicSalary" Type="float" Nullable="false" />
+          <Property Name="FinalSalary" Type="float" />
+        </EntityType>
+        <EntityContainer Name="SalaryManagement_SWD391_ProjectModel6StoreContainer">
+          <EntitySet Name="SalaryTicketDetail" EntityType="Self.SalaryTicketDetail" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SalaryManagement_SWD391_ProjectModel6" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="SalaryTicketDetail">
+          <Key>
+            <PropertyRef Name="SalaryTicketID" />
+          </Key>
+          <Property Name="SalaryTicketID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="WorkingTimeID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AllowanceID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TaxID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="WageTier" Type="Int32" Nullable="false" />
+          <Property Name="BasicSalary" Type="Double" Nullable="false" />
+          <Property Name="FinalSalary" Type="Double" />
+        </EntityType>
+        <EntityContainer Name="SalaryManagement_SWD391_ProjectEntities_SalaryTicketDetail" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="SalaryTicketDetails" EntityType="Self.SalaryTicketDetail" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SalaryManagement_SWD391_ProjectModel6StoreContainer" CdmEntityContainer="SalaryManagement_SWD391_ProjectEntities_SalaryTicketDetail">
+          <EntitySetMapping Name="SalaryTicketDetails">
+            <EntityTypeMapping TypeName="SalaryManagement_SWD391_ProjectModel6.SalaryTicketDetail">
+              <MappingFragment StoreEntitySet="SalaryTicketDetail">
+                <ScalarProperty Name="SalaryTicketID" ColumnName="SalaryTicketID" />
+                <ScalarProperty Name="WorkingTimeID" ColumnName="WorkingTimeID" />
+                <ScalarProperty Name="AllowanceID" ColumnName="AllowanceID" />
+                <ScalarProperty Name="TaxID" ColumnName="TaxID" />
+                <ScalarProperty Name="WageTier" ColumnName="WageTier" />
+                <ScalarProperty Name="BasicSalary" ColumnName="BasicSalary" />
+                <ScalarProperty Name="FinalSalary" ColumnName="FinalSalary" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

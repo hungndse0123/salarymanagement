@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SalaryManagement_SWD391_ProjectModel2StoreContainer" CdmEntityContainer="SalaryManagement_SWD391_ProjectEntities_Payroll">
+    <EntitySetMapping Name="Payrolls">
+      <EntityTypeMapping TypeName="SalaryManagement_SWD391_ProjectModel2.Payroll">
+        <MappingFragment StoreEntitySet="Payroll">
+          <ScalarProperty Name="WageTier" ColumnName="WageTier" />
+          <ScalarProperty Name="Coefficient" ColumnName="Coefficient" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

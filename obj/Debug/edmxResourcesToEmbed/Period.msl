@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SalaryManagement_SWD391_ProjectModel3StoreContainer" CdmEntityContainer="SalaryManagement_SWD391_ProjectEntities_Period">
+    <EntitySetMapping Name="Periods">
+      <EntityTypeMapping TypeName="SalaryManagement_SWD391_ProjectModel3.Period">
+        <MappingFragment StoreEntitySet="Period">
+          <ScalarProperty Name="StandardWorkingDays" ColumnName="StandardWorkingDays" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="PeriodID" ColumnName="PeriodID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

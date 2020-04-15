@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SalaryManagement_SWD391_ProjectModel5" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="SalaryTicket">
+    <Key>
+      <PropertyRef Name="SalaryTicketID" />
+    </Key>
+    <Property Name="SalaryTicketID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmployeeID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PeriodID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="SalaryManagement_SWD391_ProjectEntities_SalaryTicket" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SalaryTickets" EntityType="Self.SalaryTicket" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SalaryManagement_SWD391_ProjectModel5.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="SalaryTicket">
+    <Key>
+      <PropertyRef Name="SalaryTicketID" />
+    </Key>
+    <Property Name="SalaryTicketID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EmployeeID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PeriodID" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="SalaryManagement_SWD391_ProjectModel5StoreContainer">
+    <EntitySet Name="SalaryTicket" EntityType="Self.SalaryTicket" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
