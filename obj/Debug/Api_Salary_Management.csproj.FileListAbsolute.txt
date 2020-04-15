@@ -690,3 +690,10 @@ E:\swd391\Api_Salary_Management_5\bin\System.Text.Encodings.Web.xml
 E:\swd391\Api_Salary_Management_5\bin\System.Text.Json.xml
 E:\swd391\Api_Salary_Management_5\bin\System.Threading.Tasks.Extensions.xml
 E:\swd391\Api_Salary_Management_5\bin\System.ValueTuple.xml
+E:\swd391\Api_Salary_Management_5\bin\Microsoft.Extensions.Configuration.CommandLine.dll
+E:\swd391\Api_Salary_Management_5\bin\Microsoft.Extensions.Configuration.dll
+E:\swd391\Api_Salary_Management_5\bin\Microsoft.Owin.dll
+E:\swd391\Api_Salary_Management_5\bin\Owin.dll
+E:\swd391\Api_Salary_Management_5\bin\Microsoft.Extensions.Configuration.xml
+E:\swd391\Api_Salary_Management_5\bin\Microsoft.Extensions.Configuration.CommandLine.xml
+E:\swd391\Api_Salary_Management_5\bin\Microsoft.Owin.xml
