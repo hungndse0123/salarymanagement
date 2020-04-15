@@ -1,23 +1,7 @@
-# NuGet restore
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
-WORKDIR /src
-COPY *.sln .
-RUN dotnet restore
-COPY . .
+#Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
+#For more information, please see https://aka.ms/containercompat 
 
-# testing
-FROM build AS testing
-WORKDIR /src
-RUN dotnet build
-
-# publish
-FROM build AS publish
-WORKDIR /src
-RUN dotnet publish -c Release -o /src/publish
-
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS runtime
-WORKDIR /app
-COPY --from=publish /src/publish .
-# ENTRYPOINT ["dotnet", "SalaryManagement.dll"]
-# heroku uses the following
-CMD ASPNETCORE_URLS=http://*:$PORT dotnet SalaryManagement.dll
+FROM mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2019
+ARG source
+WORKDIR /inetpub/wwwroot
+COPY ${source:-obj/Docker/publish} .
